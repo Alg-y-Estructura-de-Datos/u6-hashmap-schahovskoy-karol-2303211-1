@@ -195,7 +195,7 @@ template <class K, class T>
 void HashMapList<K, T>::print() {
     for(int i = 0; i < tamanio; i++) {
         if(tabla[i] != NULL) {
-            std::cout << "�ndice " << i << ": ";
+            std::cout << "Indice " << i << ": ";
             Nodo<HashEntry<K, T>> *aux = tabla[i]->getInicio();
             while (aux != NULL) {
                 std::cout << "(" << aux->getDato().getClave() << ", " << aux->getDato().getValor() << ") ";
